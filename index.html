@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="script.js" defer></script>
+  <title>Todo App</title>
+</head>
+
+<body>
+  <!-- Mode light/dark -->
+  <div class="todo__mode-container">
+    <button id="mode" class="todo__mode">
+      <!-- <img id="sun" class="todo__mode--sun" src="images/icon-sun.svg" alt=""> -->
+      <ion-icon id="sun" class="todo__mode--sun" name="sunny-outline"></ion-icon>
+      <ion-icon id="moon" class="todo__mode--moon" name="moon"></ion-icon>
+      <!-- <img id="moon" class="todo__mode--moon" src="images/icon-moon.svg" alt=""> -->
+    </button>
+
+  </div>
+  <!-- Img -->
+  <div class="img-container">
+    <!-- Desktop -->
+    <div class="img-content--desktop">
+      <img class="bkg-img bkg-desktop--dark bkg-img--dark" src="images/bg-desktop-dark.jpg" alt="">
+      <img class="bkg-img bkg-desktop--light bkg-img--light" src="images/bg-desktop-light.jpg" alt="">
+
+    </div>
+    <!-- mobile -->
+    <div class="img-content--mobile">
+
+      <img class="bkg-img bkg-mobile--dark bkg-img--dark" src="images/bg-mobile-dark.jpg" alt="">
+
+      <img class="bkg-img bkg-mobile--light bkg-img--light" src="images/bg-mobile-light.jpg" alt="">
+
+    </div>
+
+  </div>
+  <!-- Todo -->
+  <div class="todo">
+
+    <div class="items">
+
+      <div class="items__all">
+        <span class="items__all--nbr items-nbr">0</span>
+        <spam class="items__all--txt">items</spam>
+      </div>
+      <div class="items__completed">
+        <span class="items__completed--nbr completed-nbr">0</span>
+        <spam class="items__completed--txt">completed</spam>
+      </div>
+      <div class="items__incompleted">
+        <span class="items__incompleted--nbr incompleted--nbr">0</span>
+        <spam class="items__incompleted--txt incompleted--nbr">incompleted</spam>
+      </div>
+
+    </div>
+
+    <div class="todo-container">
+
+      <div class="todo__form">
+
+        <input id="input" class="todo__input" type="text" placeholder="Create a new todo...">
+
+      </div>
+
+      <div class="todo__content">
+
+        <div class="todo__about">
+
+          <div class="todo__filters">
+
+            <button id="all" class="todo__filter todo__filter--all">All</button>
+
+            <button id="completed" class="todo__filter todo__filter--completed">Completed</button>
+
+            <button id="incompleted" class="todo__filter todo__filter--incompleted">Incompleted</button>
+
+          </div>
+
+        </div>
+
+        <div class="todo__info">
+
+          <div class="todo__btns">
+
+            <button class="todo__clear-completed clear-completed-Mobile">Clear Completed</button>
+            <button class="todo__clear-all clear-all-Mobile">Clear All</button>
+
+          </div>
+
+          <div class="todo__todos">
+
+            <div class="todo__left">
+              <span class="todo__left--nbr items-nbr ">6</span>
+              <span class="todo__left--txt">Items</span>
+            </div>
+
+            <div class="todo__completed">
+              <span class="todo__completed--nbr completed-nbr">6</span>
+              <span class="todo__completed--txt">Completed</span>
+            </div>
+
+            <div class="todo__incompleted">
+              <span class="todo__incompleted--nbr incompleted-nbr">5</span>
+              <span class="todo__incompleted--txt">Incompleted</span>
+            </div>
+
+          </div>
+
+        </div>
+
+        <ul class="todo__list">
+
+        </ul>
+
+      </div>
+
+      <p class="todo__note">Drog and drop to reorder the list</p>
+
+    </div>
+
+    <div class="options">
+
+      <button class="options__clear-completed">
+        <span>Clear</span>
+        <span>Completed</span>
+      </button>
+
+      <button class="options__clear-all">
+        <span>Clear</span>
+        <span>All</span>
+      </button>
+
+    </div>
+
+  </div>
+
+</body>
+
+</html>
